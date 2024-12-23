@@ -1,0 +1,20 @@
+
+:root {
+  --border-color:#ffffffaa;
+  --main-font:monospace;
+  --replacement-font:monospace;
+  --main-color:#000000cc;
+  --header-min-height:5rem;
+}
+
+
+* {
+    padding:0px;
+    margin:0px;
+    font-family: "Oswald", monospace;
+    color:white;
+}
+
+body {
+    background-color:var(--main-color);
+}

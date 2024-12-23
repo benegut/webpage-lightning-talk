@@ -1,0 +1,29 @@
+
+#footer {
+  background-color:var(--main-color);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+#footer-left {
+  visibility:hidden;
+}
+
+#footer-middle {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+#footer-right {
+  visibility:hidden;
+}
+
+.footer-link {
+  padding:1rem;
+  color: #ebebeb;
+  text-decoration: none;
+  text-align:center;
+}
