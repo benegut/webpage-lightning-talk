@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="styles/header.css" />
         <link rel="stylesheet" href="styles/index.css" />
         <link rel="stylesheet" href="styles/footer.css" />
+        <script src="scripts/jquery.min.js"></script>
+	<script src="scripts/banner.js"></script>
     </head>
 
     <body>
@@ -43,12 +45,17 @@
         </header>
 
         <main>
-            <section id="about-me">
-                <div id="about-me-wp">
+
+            <section id="banner" class="structure-section">
+                <img id="banner-img" src="assets/img/img-000.jpg">
+            </section>
+
+            <section id="about-me" class="structure-section">
+                <div id="about-me-wp" class="structure-section-wp">
                     <div id="about-me-text-wp">
-                        <h1>
+                        <h2>
                             About
-                        </h1>
+                        </h2>
                         <p>
 			  Hey! Du bist auf der Seite zum Lightning Talk „Das bisschen Haushalt - lässt sich nicht gut verteilen“, auf dem 38C3.
 			  Hier findest du das Skript und die Präsentation zum Talk.
@@ -58,43 +65,28 @@
 			  "Das bisschen Haushalt - Austausch und Ideen sammeln für den Protest gegen Kürzungen“ ein.
 			  <br>
 			  <br>
-			  Komm vorbei, wenn
+			  Komm vorbei, wenn ...
                         </p>
 			<ul>
-			  <li>
-			    du und deine Stadt ebenfalls betroffen sind und du dich Austauschen möchtest,
-			  </li>
-			  <li>
-			    du Protestideen teilen möchtest,
-			  </li>
-			  <li>
-			    deine Stadt noch nicht betroffen ist und du dich informieren willst,
-			  </li>
-			  <li>
-			    du dich vernetzen möchtest,
-			  </li>
-			  <li> ... </li>
+			  <li><p> du und deine Stadt ebenfalls betroffen sind und du dich Austauschen möchtest,</p></li>
+			  <li><p> du Protestideen teilen möchtest,</p></li>
+			  <li><p> deine Stadt noch nicht betroffen ist und du dich informieren willst,</p></li>
+			  <li><p> du dich vernetzen möchtest,</p></li>
 			</ul>
 			<p>
 			  Oder du meldest dich über die angegebenen <a href="#contact">Kontaktdaten</a> unten auf der Seite.
 			</p>
                     </div>
-                    <div id="about-me-image-wp">
-                        <!-- <img id="about-me-img" src="assets/img/studio.jpg"> -->
-                    </div>
                 </div>
             </section>
 
-            <section id="skript">
-	      <div id="skript-wp">
+            <section id="skript" class="structure-section">
+	      <div id="skript-wp" class="structure-section-wp">
                 <div id="skript-text-wp">
-                    <h1>
+                    <h2>
                         Skript <span>(<a href="das-bisschen-haushalt.pdf">download</a>)</span>
-                    </h1>
-		    <section id="slide-1">
-		      <!-- <h2> -->
-		      <!-- 	Einführung -->
-		      <!-- </h2> -->
+                    </h2>
+		    <section id="slide-1" class="slide-section">
 		      <p>
 			Ich bin Rici. Ich wohne in Dresden und arbeite als Sozialarbeiterin in einem Kinder- und Jugendtreff.
 			In meinem Talk möchte ich einen Einblick geben in die Probleme des Haushaltsentwurfs der Stadt Dresden,
@@ -103,36 +95,50 @@
 		      </p>
 		    </section>
 
-		    <section id="slide-2">
-		      <h2>
+		    <section id="slide-2" class="slide-section">
+		      <h3>
 		        Dresdens Probleme
-		      </h2>
+		      </h3>
+                      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-003.png">
 		      <p>
 		        Dresden hat bereits viele Probleme. Eingestürzten Brücken oder Nazis, von denen einige bereits mehrtägige Aktionen zum 13.
 		        Februar planen, sind nur 2 davon.
 		      </p>
+                        <img class="slide-img" src="assets/img/img-006.png">
+                      </div>
 		    </section>
 
-		    <section id="slide-3">
-		      <h2>
+		    <section id="slide-3" class="slide-section">
+		      <h3>
 		        Folgen des Haushaltsentwurfs
-		      </h2>
+		      </h3>
 		      <p>
 			Aber es geht noch weiter … denn der Doppelhaushalt für die kommenden beiden Jahre
 			wird aktuell im Stadtrat verhandelt und nach dem bisherigen Entwurf wird alles nur noch viel schlimmer.
-			Es fehlen rund 150 Millionen Euro und die sollen u.a. gespart werden 
+			Es fehlen rund 150 Millionen Euro und die sollen u.a. gespart werden
 		      </p>
 		      <ul>
 			<li>am ÖPNV</li>
 			<li>An der Feuerwehr</li>
 			<li>In der Kinder- und Jugendhilfe</li>
 			<li>An Kulturellen Angeboten</li>
-			<li>...</li>
 		      </ul>
 		      <p>
 			Die sogenannte „Liste der Grausamkeiten“ ist lang und kann an dieser Stelle nicht abschließend aufgezählt werden.
-			Es geht aber nicht nur um Kürzungen, sondern auch um die Schließung ganzer Einrichtungen und Angebote. 
+			Es geht aber nicht nur um Kürzungen, sondern auch um die Schließung ganzer Einrichtungen und Angebote.
 			Wobei die ersten bereits zum 1.1.25 schließen - obwohl noch kein Haushalt verabschiedet wurde.
+		      </p>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-007.png">
+                        <img class="slide-img" src="assets/img/img-009.png">
+                      </div>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-011.png">
+                        <img class="slide-img" src="assets/img/img-013.png">
+                      </div>
+
+		      <p>
 			Laut Plan soll das im Februar passieren. Für den Bereich der Kinder- und Jugendhilfe bleibt noch etwas mehr Zeit.
 			Die vom Jugendamt benannten Einrichtungen sind dazu aufgefordert ihrer
 			Schließung für den ersten April kommenden Jahres vorzubereiten.
@@ -149,12 +155,14 @@
 		    </section>
 
 		    <section id="slide-4">
-		      <h2>
+		      <h3>
 		        Es ist kompliziert
-		      </h2>
+		      </h3>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-020.png">
+                      </div>
 		      <p>
-			Es ist kompliziert.
-			Es gibt keine Mehrheiten für progressive Fraktionen und die CDU wird da zwangsläufig benötigt.
+			Es ist kompliziert. Es gibt keine Mehrheiten für progressive Fraktionen und die CDU wird da zwangsläufig benötigt.
 			Denn Rechte und Konservative haben eine Mehrheit mit 38 Sitzen: AFD, CDU, Team Zastrow, FDP.
 			Und so scheiterte ein Antrag von SPD und PVP (ein Zusammenschluss aus Piraten, Volt und Die Partei),
 			mit dem verhindern sollte, dass 18 Projekte aus dem Bereich Gesundheit und Soziales,
@@ -162,7 +170,7 @@
 			Angehörige und Betroffene von Alzheimer und Demenz, Beratungsstellen für Migrant*innen, Sprachkurse oder Suchtzentren.
 			Der Antrag scheiterte im Stadtrat. Ursprünglich sicherte die CDU zu, den Antrag zu unterstützen - kippte ihr
 			Versprechen jedoch einen Tag vor der entsprechenden Stadtratssitzung. Sie brachten einen eigenen Antrag ein,
-			der lediglich die Rettung eines einzigen Projekts vorsah und der am Ende die Mehrheit im Stadtrat fand. 
+			der lediglich die Rettung eines einzigen Projekts vorsah und der am Ende die Mehrheit im Stadtrat fand.
 			Die Räumlichkeiten werden also aufgekündigt, das Personal entlassen und Menschen, die diese Angebote nutzen,
 			werden nun mit Beginn des neuen Jahres allein gelassen. Und leider ist es nun so: was einmal geschlossen wurde,
 			kann und wird auch sicher nicht so schnell wieder aktiviert werden.
@@ -170,9 +178,12 @@
 		    </section>
 
 		    <section id="slide-5">
-		      <h2>
+		      <h3>
 		        Protest
-		      </h2>
+		      </h3>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-022.png">
+                      </div>
 		      <p>
 			Gegen all das hat sich Protest formiert. Unter dem „Bündnis gegen Kürzungen Dresden“ haben sich mehrere Kampagnen
 			und Bündnisse aus verschiedenen Bereichen zusammengeschlossen, - damit ist schon etwas wichtiges passiert,
@@ -187,14 +198,17 @@
 		      </ul>
 		      <p>
 			Also werden alle wichtigen Informationen dazu aufbereitet, Vorlagen für die verschiedenen betroffenen Bereiche erstellt,
-			Sammelstellen eingerichtet und damit die Möglichkeit zur Einwendung bedeutend leichter gemacht. 
+			Sammelstellen eingerichtet und damit die Möglichkeit zur Einwendung bedeutend leichter gemacht.
 		      </p>
 		    </section>
 
 		    <section id="slide-6">
-		      <h2>
+		      <h3>
 		        Reichweite des Problems
-		      </h2>
+		      </h3>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-030.png">
+                      </div>
 		      <p>
 			Nun ist sicherlich vielen bekannt, dass Dresden mit diesem Problem nicht allein da steht und wissen beispielsweise
 			um die Proteste in Berlin. Der Deutsche Städte- und Gemeindebund hat im Sommer eine Pressemitteilung veröffentlicht,
@@ -203,27 +217,37 @@
 			die dieses Problem schlußendlich an die Menschen weiterreichen. Besonders betroffen sind am Ende diejenigen,
 			die bereits mit zahlreichen Problemlagen zu kämpfen haben, dringend Unterstützung benötigen, die keine Lobby haben,
 			unsichtbar gemacht werden und an den Rand gedrängt sind. Dabei tragen die Umstände in denen wir Zusammenleben häufig dazu bei,
-			dass sich die Not vieler Menschen verschlimmert,  und die Hilfsangebote für sie unverzichtbar macht. 
+			dass sich die Not vieler Menschen verschlimmert,  und die Hilfsangebote für sie unverzichtbar macht.
 		      </p>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-027.png">
+                        <img class="slide-img" src="assets/img/img-025.png">
+                      </div>
 		    </section>
 
 		    <section id="slide-7">
-		      <h2>
+		      <h3>
 		        Kürzungen kosten
-		      </h2>
+		      </h3>
 		      <p>
 			Und zwar die Hilfsangebote, die ihnen gestrichen werden,
 			mit zum Teil katastrophalen individuellen und gesellschaftlichen Folgen. - Es spielt
 			extremen Parteien in die Hände und senkt die Wahlbeteiligung genauso wie das Vertrauen in die Politik.
 			Und am Ende kosten die Kürzungen nicht nur mehr Geld um die entstandenen Folgen aufzufangen,
-			sondern im Extremfall eben auch Menschenleben. 
+			sondern im Extremfall eben auch Menschenleben.
 		      </p>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-035.png">
+                      </div>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-032.jpg">
+                      </div>
 		    </section>
 
 		    <section id="slide-8">
-		      <h2>
+		      <h3>
 		        Millionäre besteuern
-		      </h2>
+		      </h3>
 		      <p>
 			Viele hier werden Ideen im Kopf haben, wie eine freie und gerechte Gesellschaft aussehen könnte.
 			Oder ihr habt ähnliche Ideen, wie es
@@ -231,30 +255,41 @@
 			Nun fehlt mir der Optimismus zu glauben, dass uns eine positive Korrektur unseres Zusammenlebens oder des kapitalistischen
 			Systems bevor steht.
 			Aber ich glaube, dass wir den Druck von unten nach oben brauchen, damit sich etwas in Bewegung setzt und ich habe Hoffnung,
-			dass wir zumindest schlimmeres verhindern können. 
+			dass wir zumindest schlimmeres verhindern können.
 		      </p>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-036.jpg">
+                      </div>
+
 		    </section>
 
 		    <section id="slide-9">
-		      <h2>
+		      <h3>
 		        Erfolgsgeschichten
-		      </h2>
+		      </h3>
 		      <p>
-			Denn das Protest wirkt. Das hat zum Beispiel NRW bewiesen. 
+			Denn das Protest wirkt. Das hat zum Beispiel NRW bewiesen.
 			Ca. 32 000 Menschen sind auf die Straße gegangen, gegen den Entwurf des Landes-Haushalts und das mit Erfolg.
 			Das heißt natürlich nicht, dass mit den Umschichtungen alles in Butter und unkritisch ist,
 			aber der drastische Kahlschlag wurde verhindert.
 		      </p>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-039.png">
+                      </div>
+		      <div class="slide-image-wp">
+                        <img class="slide-img" src="assets/img/img-041.png">
+                      </div>
+
 		    </section>
 
 		    <section id="slide-10">
-		      <h2>
+		      <h3>
 		        Kontakt und Einladung
-		      </h2>
+		      </h3>
 		      <p>
 			Und jetzt die Frage: Wie können wir und viele andere Städte es schaffen das Schlimmste zu verhindern?
 			Wie kann kreativen Protest noch gehen?
-			Wie können wir Multiplizieren und über längere Zeit mobilisieren? 
+			Wie können wir Multiplizieren und über längere Zeit mobilisieren?
 			Wenn ihr dazu  Ideen habt, euch Vernetzen wollt, ihr vor den gleichen Problemen steht,
 			Erfahrung teilen wollt oder wenn ihr wisst ob man gegen
 			Kürzungen auch cybern kann, dann schreibt mir gern über die angegebenen Kanäle oder kommt morgen
@@ -271,11 +306,11 @@
             </section>
 
             <section id="contact">
-	      <div id="contact-wp">
+	      <div id="contact-wp" class="structure-section-wp">
                 <div id="contact-text-wp">
-                    <h1>
+                    <h2>
                         Contact
-                    </h1>
+                    </h2>
                     <p>
 		      E-Mail:      <b><a href="mail@das-bisschen-haushalt.de">mail@das-bisschen-haushalt.de</a></b>
 		      <br>
