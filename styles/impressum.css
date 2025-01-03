@@ -1,0 +1,50 @@
+/*CSS of impressum.html*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-size:1rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color:#000000;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#impressum-contact-section {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#impressum-contact-text-wp {
+    max-width:900px;
+    padding:2rem;
+}
+
+#impressum-dataprotection-section {
+}
+
+#impressum-dataprotection-text-wp {
+}
